@@ -80,7 +80,7 @@ dependencies {
     // Retrofit 网络请求
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.5.0")
+
 
     // Navigation 导航组件
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
@@ -89,4 +89,8 @@ dependencies {
     // Glide 图片加载
     implementation("com.github.bumptech.glide:glide:4.12.0")
     ksp("com.github.bumptech.glide:compiler:4.12.0")
+    // OkHttp 核心库
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+// 日志拦截器 (你的代码里也用到了 HttpLoggingInterceptor)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 }
