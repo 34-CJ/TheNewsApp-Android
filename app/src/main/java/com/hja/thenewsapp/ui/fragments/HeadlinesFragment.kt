@@ -25,7 +25,7 @@ import com.hja.thenewsapp.util.Resource
 import kotlin.apply
 
 
-class HeadlinesFragment : Fragment() {
+class HeadlinesFragment : Fragment(R.layout.fragment_headlines) {
     lateinit var newsViewModel: NewsViewModel
     lateinit var newsAdapter: NewsAdapter
     lateinit var retryButton: Button
@@ -86,7 +86,7 @@ class HeadlinesFragment : Fragment() {
 
         })
         retryButton.setOnClickListener {
-            newsViewModel.getHeadlines("cn")
+            newsViewModel.getHeadlines("us")
         }
 
     }
@@ -135,7 +135,7 @@ class HeadlinesFragment : Fragment() {
             val shouldPaginate =
                 isNoErrors && isNotLoadingAndNotLastPage && isAtLastItem && isNotAtBeginning && isTotalMoreThanVisible && isScrolling
             if (shouldPaginate) {
-                newsViewModel.getHeadlines("cn")
+                newsViewModel.getHeadlines("us")
                 isScrolling = false
 
             }

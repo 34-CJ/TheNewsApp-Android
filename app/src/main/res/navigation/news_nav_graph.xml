@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/news_nav_graph"
-    app:startDestination="@id/headlinesFragment2">
+    app:startDestination="@id/headlinesFragment">
 
     <fragment
         android:id="@+id/articleFragment"
@@ -17,7 +17,7 @@
 
 
     <fragment
-        android:id="@+id/favouritesFragment2"
+        android:id="@+id/favouritesFragment"
         android:name="com.hja.thenewsapp.ui.fragments.FavouritesFragment"
         android:label="FavouritesFragment" >
         <action
@@ -25,7 +25,7 @@
             app:destination="@id/articleFragment" />
     </fragment>
     <fragment
-        android:id="@+id/headlinesFragment2"
+        android:id="@+id/headlinesFragment"
         android:name="com.hja.thenewsapp.ui.fragments.HeadlinesFragment"
         android:label="HeadlinesFragment" >
         <action
@@ -33,7 +33,7 @@
             app:destination="@id/articleFragment" />
     </fragment>
     <fragment
-        android:id="@+id/searchFragment2"
+        android:id="@+id/searchFragment"
         android:name="com.hja.thenewsapp.ui.fragments.SearchFragment"
         android:label="SearchFragment" >
         <action
